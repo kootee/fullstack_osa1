@@ -14,7 +14,7 @@ const Button = (props) => (
 )
 
 const Statistics = ({good, neutral, bad}) => {
-    const sum = good + neutral + bad //voisiko tähän viitata totalin ulkopuolelta?
+    const sum = good + neutral + bad
     const median = (good - bad)/sum
     const positive = (good / sum * 100).toFixed(0)
     console.log(sum)
